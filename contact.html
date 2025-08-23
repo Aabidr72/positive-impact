@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positive Impact</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/side-navigation.css">
+  </head>
+  <body>
+    <div style="height: 100vh; display: flex; flex-direction: column">
+        <header>
+          <div id="menu-button" class="horizontal-container" onclick="openNav()">
+            <span class="material-icons">menu</span>
+            <span class="icon-text">Menu</span>
+          </div>
+          <img src="images/name.png" height="35">
+          <button class="rounded-button">Donate</button>
+        </header>
+        <div id="sidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="our-work.html">Our Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div id="main-content" style="border: 1px solid black">
+          <div class="content-card green-content-card">
+            <div style="display: flex; align-items: center;">
+               <span class="material-icons" style="color: #0ca4a3; font-size: 200px;">add_location</span>
+                <div class="bold-content mailing-address-text" style="">
+                  <p>Mailing Address: <em>Positive Impact</em></p>
+                  <p>12626 Heath Park Trail</p>
+                  <p>Houston, TX 77089-1902, USA</p>
+                </div>
+            </div>
+            <div style="width: 100px"></div>
+            <div style="display: flex; align-items: center;">
+              <span class="material-icons" style="color: #6db900; font-size: 200px;">eco</span>
+              <div class="bold-content">
+                <p>We are IRS recognized (EIN: 99-4708449).</p>  
+                <p>All donations are tax-deductible to </p>
+                <p>the extent permitted by law.</p> 
+                <p>Donors will receive an official receipt</p> 
+                <p>for their contributions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

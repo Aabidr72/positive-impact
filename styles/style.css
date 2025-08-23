@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Museo+Moderno");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin";
+  font-size: 30px;
+  font-weight: 300;
+}
+
+header {
+  padding: 0px 20px;
+  background-color: #097070;
+  min-height: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p, p > em {
+  font-size: 16px;
+  font-weight:lighter;
+  color: #536e56;
+  text-align: center;
+}
+
+.description {
+  width: 500px;
+}
+
+.rounded-button {
+  background-color: #0ca4a3;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  height: 15px;
+  width: 100px;
+  line-height: 1px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.rounded-button:hover {
+  background-color: #0dbdbc;
+}
+
+.material-icons {
+  color: white;
+}
+
+.icon-text {
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.horizontal-container {
+  display: flex;
+  align-items: center;
+}
+
+#main-content {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 90px;
+  height: auto;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#menu-button {
+  width: 100px;
+}
+
+#organization-title {
+  font-family: "Museo Moderno";
+  font-size: 50px;
+  font-weight: 900;
+  color: #0ca4a3;
+}
+
+.content-card {
+  display: flex; 
+  border-radius: 15px; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px 15px;
+}
+
+.vertical-content {
+  flex-direction: column;
+}
+
+.green-content-card {
+  background-color: rgba(206, 237, 209, 0.2);
+  border: 2px solid #b4d1b7; 
+}
+
+.dark-aqua-content-card {
+  background-color: rgba(209, 227, 227, 0.2);
+  border: 2px solid #a1b3b3;
+}
+
+.purple-content-card {
+    background-color: rgba(170, 163, 181, 0.2);
+    border: 2px solid #b3acbd;
+}
+
+.hidden-content {
+    display: none;
+}
+
+div[class~="content-card"]:hover .hidden-content {
+    display: block;
+}
