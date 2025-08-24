@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="styles/side-navigation.css" />
   </head>
   <body>
-    <div style="height: 100vh; display: flex; flex-direction: column">
+    <div class="max-viewport-height vertical-container">
       <header>
         <div id="menu-button" class="horizontal-container" onclick="openNav()">
-          <span class="material-icons">menu</span>
+          <span class="material-icons menu-icon">menu</span>
           <span class="icon-text">Menu</span>
         </div>
-        <img src="images/name.png" height="35" />
+        <img src="images/name.png" class="header-title" />
         <button class="rounded-button">Donate</button>
       </header>
       <div id="sidenav" class="sidenav">
@@ -31,14 +31,15 @@
         <a href="contact.html">Contact</a>
       </div>
       <div id="main-content">
+        <h1 class="section-title">Our Work</h1>
         <div class="content-card dark-aqua-content-card">
-          <img src="images/bridge.png" height="250" />
-          <div style="margin-left: 50px">
-            <h3 style="text-align: center;">
+          <img src="images/bridge.png" class="bridge"/>
+          <div class="content-card-spacing">
+            <h3 class="content-card-title">
               Bridges of Understanding
             </h3>
-            <div class="hidden-content">
-                <br />
+            <div class="hidden-content horizontal-container">
+                <div class="vertical-spacer"></div>
                 <p class="description">
                     Over a relaxed dinner featuring ethnic world cuisine that reflects the generosity, hospitality, and warmth of diverse cultures, participants engage in an enriching experience designed to dispel myths and misinformation. Through educational presentations and interactive Kahoot games, attendees uncover truths often overlooked or misrepresented in mainstream media. Lively Q&A sessions with student panels, skits, and knowledgeable facilitators build bridges of understanding, highlighting the shared values—such as respect, justice, honesty, and empathy—that unite us all. These events underscore how much humankind truly has in common, challenging divisive narratives and fostering meaningful cultural connections.
                 </p>
@@ -47,13 +48,13 @@
         </div>
         <br>
         <div class="content-card purple-content-card">
-            <img src="images/tools.png" height="200" />
-            <div style="margin-left: 50px">
-              <h3 style="text-align: center;">
+            <img src="images/tools.png" class="tools" />
+            <div class="content-card-spacing">
+              <h3 class="content-card-title">
                 Back to Work
               </h3>
               <div class="hidden-content">
-                <br />
+                <div class="vertical-spacer"></div>
                 <p class="description">
                   Positive Impact is a nonprofit organization dedicated to restoring dignity and stability to the lives of refugee families who have been uprooted from their homes and livelihoods, often without choice. Recognizing the wealth of skills and trades these individuals bring—bakers, tailors, healthcare workers, handymen, electricians, plumbers, welders, educators, hospitality workers, pipefitters, and more—Positive Impact works to bridge the gap between displacement and meaningful employment. By offering transitional support and tools for integration, the organization helps refugees rebuild their lives in new countries, empowering them to contribute their talents to their communities and regain economic independence. 
                 </p>

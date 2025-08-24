@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="styles/side-navigation.css" />
   </head>
   <body>
-    <div style="height: 100vh; display: flex; flex-direction: column">
+    <div class="max-viewport-height vertical-container">
       <header>
         <div id="menu-button" class="horizontal-container" onclick="openNav()">
-          <span class="material-icons">menu</span>
+          <span class="material-icons menu-icon">menu</span>
           <span class="icon-text">Menu</span>
         </div>
-        <img src="images/name.png" height="35" />
+        <img src="images/name.png" class="header-title" />
         <button class="rounded-button">Donate</button>
       </header>
       <div id="sidenav" class="sidenav">
@@ -31,21 +31,20 @@
         <a href="contact.html">Contact</a>
       </div>
       <div id="main-content">
+        <h1 class="section-title">About</h1>
         <div class="content-card green-content-card">
-          <div style="margin-left: 50px">
-            <p class="description">
-                Positive Impact is a 501(c)(3) nonprofit where education meets service. We engage educators, students, and refugees in transformative learning experiences that foster empathy, inclusion, and opportunity—championing benevolent and educational initiatives that create a lasting and positive effect on society. Our efforts are made possible through the generous support of our benevolent donors.
-            </p>
-          </div>
+          <p class="description">
+            Positive Impact is a 501(c)(3) nonprofit where education meets service. We engage educators, students, and refugees in transformative learning experiences that foster empathy, inclusion, and opportunity—championing benevolent and educational initiatives that create a lasting and positive effect on society. Our efforts are made possible through the generous support of our benevolent donors.
+          </p>
         </div>
         <br>
         <div class="content-card dark-aqua-content-card">
-          <img src="images/target.png" height="200" />
-          <div style="margin-left: 50px">
-            <h3 style="text-align: center;">
+          <img src="images/target.png" class="tools" />
+          <div class="vertical-container centered-content content-card-spacing">
+            <h3 class="content-card-title">
               Our Mission
             </h3>
-            <br />
+            <div class="vertical-spacer"></div>
             <p class="description">
               To build bridges of understanding between educators, students & young adults from diverse world cultures through engaging and authentic live experiences. 
             </p>
@@ -53,12 +52,12 @@
         </div>
         <br>
         <div class="content-card purple-content-card">
-            <img src="images/vision.png" height="200" />
-            <div style="margin-left: 50px">
-              <h3 style="text-align: center;">
+            <img src="images/vision.png" class="vision" />
+            <div class="vertical-container centered-content content-card-spacing">
+              <h3 class="content-card-title">
                 Our Vision
               </h3>
-              <br />
+              <div class="vertical-spacer"></div>
               <p class="description">
                 To build an inclusive world that readily accepts and embraces individuals from diverse world cultures. 
               </p>

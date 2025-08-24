@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="styles/side-navigation.css">
   </head>
   <body>
-    <div style="height: 100vh; display: flex; flex-direction: column">
+    <div class="max-viewport-height vertical-container">
         <header>
           <div id="menu-button" class="horizontal-container" onclick="openNav()">
-            <span class="material-icons">menu</span>
+            <span class="material-icons menu-icon">menu</span>
             <span class="icon-text">Menu</span>
           </div>
-          <img src="images/name.png" height="35">
+          <img src="images/name.png" class="header-title">
           <button class="rounded-button">Donate</button>
         </header>
         <div id="sidenav" class="sidenav">
@@ -27,19 +27,20 @@
           <a href="our-work.html">Our Work</a>
           <a href="contact.html">Contact</a>
         </div>
-        <div id="main-content" style="border: 1px solid black">
+        <div id="main-content">
+          <h1 class="section-title">Contact</h1>
           <div class="content-card green-content-card">
-            <div style="display: flex; align-items: center;">
-               <span class="material-icons" style="color: #0ca4a3; font-size: 200px;">add_location</span>
-                <div class="bold-content mailing-address-text" style="">
+            <div class="horizontal-container">
+               <span class="material-icons location-icon">add_location</span>
+                <div class="bold-content mailing-address-text">
                   <p>Mailing Address: <em>Positive Impact</em></p>
                   <p>12626 Heath Park Trail</p>
                   <p>Houston, TX 77089-1902, USA</p>
                 </div>
             </div>
-            <div style="width: 100px"></div>
-            <div style="display: flex; align-items: center;">
-              <span class="material-icons" style="color: #6db900; font-size: 200px;">eco</span>
+            <div class="horizontal-spacer"></div>
+            <div class="horizontal-container">
+              <span class="material-icons eco-friendly-icon">eco</span>
               <div class="bold-content">
                 <p>We are IRS recognized (EIN: 99-4708449).</p>  
                 <p>All donations are tax-deductible to </p>
